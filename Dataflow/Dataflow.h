@@ -14,14 +14,15 @@ FOUNDATION_EXPORT double DataflowVersionNumber;
 //! Project version string for Dataflow.
 FOUNDATION_EXPORT const unsigned char DataflowVersionString[];
 
-@class DfSocket;
-@protocol DfConnection;
-@protocol DfValueProvider;
-@class DfVar;
-@class DfTransform;
+@class DFSocket;
+@protocol DFConnection;
+@protocol DFValueProvider;
+@class DFVar;
+@class DFTransform;
 
 #import <Dataflow/Protocols.h>
 #import <Dataflow/Socket.h>
 #import <Dataflow/Var.h>
 #import <Dataflow/Transform.h>
+#import <Dataflow/Module.h>
 #import <Dataflow/ConcatStrings.h>

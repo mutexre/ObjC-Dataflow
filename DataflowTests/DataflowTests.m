@@ -24,13 +24,16 @@
 }
 
 - (void)testConcat {
-    DfConcatStrings* concat = [DfConcatStrings new];
+    DFConcatStrings* concat = [DFConcatStrings new];
     XCTAssertEqual(concat.output.value, nil);
     
-    concat.inputStrings = @[ DfVarMake(@"abc"), DfVarMake(@" "), DfVarMake(@"def") ];
+    concat.inputStrings = @[ DFVarMake(@"abc"), DFVarMake(@" "), DFVarMake(@"def") ];
     XCTAssertEqual(concat.output.value, nil);
     
-    concat.output = [DfVar<NSString*> new];
+    [concat autocreateOutputVariables];
+    XCTAssert([concat.output.value isEqualToString:@"abc def"]);
+    
+    concat.output = [DFVar<NSString*> new];
     XCTAssert([concat.output.value isEqualToString:@"abc def"]);
     
     concat.inputStrings[1].value = @"+";

@@ -8,7 +8,7 @@
 
 #import "Dataflow.h"
 
-@implementation DfConcatStrings {
+@implementation DFConcatStrings {
     NSString *invalidateSelString, *evaluateSelString;
 }
 
@@ -20,9 +20,9 @@
     return self;
 }
 
-- (void)setInputStrings:(NSArray<DfVar<NSString *> *> *)inputStrings {
+- (void)setInputStrings:(NSArray<DFVar<NSString *> *> *)inputStrings {
     if (_inputStrings)
-        for (DfSocket* s in _inputStrings) {
+        for (DFSocket* s in _inputStrings) {
             [s removeConnection:self];
             [invalidators removeObjectForKey:s];
         }
@@ -30,7 +30,7 @@
     [invalidators removeAllObjects];
     
     _inputStrings = inputStrings;
-    for (DfSocket* sock in _inputStrings) {
+    for (DFSocket* sock in _inputStrings) {
         [sock addConnection:self];
         [invalidators setObject:invalidateSelString forKey:sock];
     }
@@ -38,7 +38,7 @@
     [self invalidate];
 }
 
-- (void)setOutput:(DfVar<NSString *> *)output {
+- (void)setOutput:(DFVar<NSString *> *)output {
     if (_output) _output.provider = nil;
     [evaluators removeObjectForKey:_output];
 
@@ -51,7 +51,7 @@
 
 - (void)evaluate {
     NSMutableString* result = [NSMutableString new];
-    for (DfVar<NSString*>* var in _inputStrings)
+    for (DFVar<NSString*>* var in _inputStrings)
         [result appendString:var.value];
     _output.value = result;
 }
@@ -61,7 +61,7 @@
 }
 
 - (void)autocreateOutputVariables {
-    self.output = [DfVar<NSString*> new];
+    self.output = [DFVar<NSString*> new];
 }
 
 @end

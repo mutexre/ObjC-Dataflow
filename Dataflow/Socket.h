@@ -6,10 +6,10 @@
 //  Copyright © 2016 ISS. All rights reserved.
 //
 
-@interface DfSocket : NSObject
+@interface DFSocket : NSObject
 
-- (void)addConnection:(id<DfConnection>)conn;
-- (void)removeConnection:(id<DfConnection>)conn;
+- (void)addConnection:(id<DFConnection>)conn;
+- (void)removeConnection:(id<DFConnection>)conn;
 - (void)removeAllConnections;
 
 - (void)tap;

@@ -19,6 +19,8 @@
 		C32CC4711C6C81F900D3E5C0 /* Var.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC43F1C6C54EE00D3E5C0 /* Var.m */; };
 		C32CC4721C6C81F900D3E5C0 /* Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC4461C6C563800D3E5C0 /* Transform.m */; };
 		C32CC4731C6C81F900D3E5C0 /* ConcatStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC44A1C6C68CB00D3E5C0 /* ConcatStrings.m */; };
+		C32CC4761C6C928600D3E5C0 /* Module.h in Headers */ = {isa = PBXBuildFile; fileRef = C32CC4741C6C928600D3E5C0 /* Module.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C32CC4771C6C928600D3E5C0 /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC4751C6C928600D3E5C0 /* Module.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C32CC45A1C6C7FFB00D3E5C0 /* DataflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32CC45F1C6C7FFC00D3E5C0 /* DataflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataflowTests.m; sourceTree = "<group>"; };
 		C32CC4611C6C7FFC00D3E5C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C32CC4741C6C928600D3E5C0 /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
+		C32CC4751C6C928600D3E5C0 /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				C32CC4521C6C7FFB00D3E5C0 /* Dataflow */,
+				C32CC4791C6C92A400D3E5C0 /* Transforms */,
+				C32CC4781C6C929500D3E5C0 /* Examples */,
 				C32CC45E1C6C7FFC00D3E5C0 /* DataflowTests */,
 				C32CC4351C6B509000D3E5C0 /* Products */,
 			);
@@ -97,8 +103,8 @@
 				C32CC43F1C6C54EE00D3E5C0 /* Var.m */,
 				C32CC4451C6C563800D3E5C0 /* Transform.h */,
 				C32CC4461C6C563800D3E5C0 /* Transform.m */,
-				C32CC4491C6C68CB00D3E5C0 /* ConcatStrings.h */,
-				C32CC44A1C6C68CB00D3E5C0 /* ConcatStrings.m */,
+				C32CC4741C6C928600D3E5C0 /* Module.h */,
+				C32CC4751C6C928600D3E5C0 /* Module.m */,
 				C32CC4551C6C7FFB00D3E5C0 /* Info.plist */,
 			);
 			path = Dataflow;
@@ -113,6 +119,23 @@
 			path = DataflowTests;
 			sourceTree = "<group>";
 		};
+		C32CC4781C6C929500D3E5C0 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		C32CC4791C6C92A400D3E5C0 /* Transforms */ = {
+			isa = PBXGroup;
+			children = (
+				C32CC4491C6C68CB00D3E5C0 /* ConcatStrings.h */,
+				C32CC44A1C6C68CB00D3E5C0 /* ConcatStrings.m */,
+			);
+			name = Transforms;
+			path = Dataflow;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -125,6 +148,7 @@
 				C32CC4691C6C819900D3E5C0 /* Socket.h in Headers */,
 				C32CC46A1C6C819C00D3E5C0 /* Var.h in Headers */,
 				C32CC46B1C6C819F00D3E5C0 /* Transform.h in Headers */,
+				C32CC4761C6C928600D3E5C0 /* Module.h in Headers */,
 				C32CC46C1C6C81A200D3E5C0 /* ConcatStrings.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C32CC4701C6C81F900D3E5C0 /* Socket.m in Sources */,
+				C32CC4771C6C928600D3E5C0 /* Module.m in Sources */,
 				C32CC4711C6C81F900D3E5C0 /* Var.m in Sources */,
 				C32CC4721C6C81F900D3E5C0 /* Transform.m in Sources */,
 				C32CC4731C6C81F900D3E5C0 /* ConcatStrings.m in Sources */,

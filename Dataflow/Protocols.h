@@ -6,10 +6,10 @@
 //  Copyright © 2016 ISS. All rights reserved.
 //
 
-@protocol DfConnection
-- (void)receive:(DfSocket*)socket;
+@protocol DFConnection
+- (void)receive:(DFSocket*)socket;
 @end
 
-@protocol DfValueProvider <NSObject>
-- (void)evaluate:(DfVar*)var;
+@protocol DFValueProvider <NSObject>
+- (void)evaluate:(DFVar*)var;
 @end

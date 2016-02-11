@@ -6,11 +6,11 @@
 //  Copyright © 2016 ISS. All rights reserved.
 //
 
-#define DfVarMake(var) [DfVar varWithValue:var]
+#define DFVarMake(var) [DFVar varWithValue:var]
 
-@interface DfVar<__covariant T> : DfSocket
+@interface DFVar<__covariant T> : DFSocket
 
-@property (nonatomic, weak) id<DfValueProvider> provider;
+@property (nonatomic, weak) id<DFValueProvider> provider;
 @property (nonatomic, readonly) BOOL valid;
 @property (nonatomic, strong) T value;
 @property (nonatomic, readonly) T instantValue;

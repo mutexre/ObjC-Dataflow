@@ -6,9 +6,9 @@
 //  Copyright © 2016 ISS. All rights reserved.
 //
 
-#import "Dataflow.h"
+#import <Dataflow/Dataflow.h>
 
-@implementation DfVar
+@implementation DFVar
 
 @synthesize value = _value;
 
@@ -28,7 +28,7 @@
 }
 
 + (instancetype)varWithValue:(id)value {
-    return [[DfVar alloc] initWithValue:value];
+    return [[DFVar alloc] initWithValue:value];
 }
 
 - (void)evaluateIfNeeded {
@@ -53,7 +53,7 @@
     return _value;
 }
 
-- (void)setProvider:(id<DfValueProvider>)provider {
+- (void)setProvider:(id<DFValueProvider>)provider {
     _provider = provider;
     _valid = NO;
 }

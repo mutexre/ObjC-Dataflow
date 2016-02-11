@@ -6,9 +6,9 @@
 //  Copyright © 2016 ISS. All rights reserved.
 //
 
-#import "Dataflow.h"
+#import <Dataflow/Dataflow.h>
 
-@implementation DfSocket {
+@implementation DFSocket {
     NSMutableSet* connections;
 }
 
@@ -19,11 +19,11 @@
     return self;
 }
 
-- (void)addConnection:(id<DfConnection>)conn {
+- (void)addConnection:(id<DFConnection>)conn {
     [connections addObject:conn];
 }
 
-- (void)removeConnection:(id<DfConnection>)conn {
+- (void)removeConnection:(id<DFConnection>)conn {
     [connections removeObject:conn];
 }
 
@@ -32,7 +32,7 @@
 }
 
 - (void)tap {
-    for (id<DfConnection> conn in connections)
+    for (id<DFConnection> conn in connections)
         [conn receive:self];
 }
 

@@ -6,11 +6,11 @@
 //  Copyright © 2016 ISS. All rights reserved.
 //
 
-#define df_i
-#define df_o
+#define DFInput
+#define DFOutput
 
-@interface DfTransform : NSObject<DfConnection, DfValueProvider> {
-    NSMapTable<DfSocket*, NSString*> *invalidators, *evaluators;
+@interface DFTransform : NSObject<DFConnection, DFValueProvider> {
+    NSMapTable<DFSocket*, NSString*> *invalidators, *evaluators;
 }
 
 - (void)autocreateOutputVariables;

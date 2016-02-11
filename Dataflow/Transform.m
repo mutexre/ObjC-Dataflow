@@ -6,9 +6,9 @@
 //  Copyright © 2016 ISS. All rights reserved.
 //
 
-#import "Dataflow.h"
+#import <Dataflow/Dataflow.h>
 
-@implementation DfTransform
+@implementation DFTransform
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -21,17 +21,17 @@
     return self;
 }
 
-- (void)invoke:(NSMapTable*)map sock:(DfSocket*)sock {
+- (void)invoke:(NSMapTable*)map sock:(DFSocket*)sock {
     NSString* selString = [map objectForKey:sock];
     SEL sel = NSSelectorFromString(selString);
     [self performSelector:sel];
 }
 
-- (void)receive:(DfSocket *)inputVar {
+- (void)receive:(DFSocket*)inputVar {
     [self invoke:invalidators sock:inputVar];
 }
 
-- (void)evaluate:(DfVar*)outputVar {
+- (void)evaluate:(DFVar*)outputVar {
     [self invoke:evaluators sock:outputVar];
 }
 

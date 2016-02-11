@@ -6,12 +6,9 @@
 //  Copyright © 2016 ISS. All rights reserved.
 //
 
-@interface DfConcatStrings : DfTransform
+@interface DFConcatStrings : DFTransform
 
-df_i @property (nonatomic, strong) NSArray<DfVar<NSString*>*>* inputStrings;
-df_o @property (nonatomic, strong) DfVar<NSString*>* output;
-
-- (void)evaluate;
-- (void)invalidate;
+DFInput @property (nonatomic, strong) NSArray<DFVar<NSString*>*>* inputStrings;
+DFOutput @property (nonatomic, strong) DFVar<NSString*>* output;
 
 @end
