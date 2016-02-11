@@ -12,11 +12,10 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        invalidators = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsWeakMemory | NSPointerFunctionsOpaquePersonality
-                                             valueOptions:NSPointerFunctionsStrongMemory];
-
-        evaluators = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsWeakMemory | NSPointerFunctionsOpaquePersonality
-                                           valueOptions:NSPointerFunctionsStrongMemory];
+        NSPointerFunctionsOptions keyOptions = NSPointerFunctionsWeakMemory | NSPointerFunctionsOpaquePersonality;
+        NSPointerFunctionsOptions valOptions = NSPointerFunctionsStrongMemory;
+        invalidators = [NSMapTable mapTableWithKeyOptions:keyOptions valueOptions:valOptions];
+        evaluators = [NSMapTable mapTableWithKeyOptions:keyOptions valueOptions:valOptions];
     }
     return self;
 }
