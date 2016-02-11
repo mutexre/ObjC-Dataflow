@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <Dataflow/Dataflow.h>
 
 @interface DataflowTests : XCTestCase
 
@@ -16,24 +17,24 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testConcat {
+    DfConcatStrings* concat = [DfConcatStrings new];
+    XCTAssertEqual(concat.output.value, nil);
+    
+    concat.inputStrings = @[ DfVarMake(@"abc"), DfVarMake(@" "), DfVarMake(@"def") ];
+    XCTAssertEqual(concat.output.value, nil);
+    
+    concat.output = [DfVar<NSString*> new];
+    XCTAssert([concat.output.value isEqualToString:@"abc def"]);
+    
+    concat.inputStrings[1].value = @"+";
+    XCTAssert([concat.output.value isEqualToString:@"abc+def"]);
 }
 
 @end

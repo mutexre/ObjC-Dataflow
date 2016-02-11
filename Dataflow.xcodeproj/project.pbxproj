@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C32CC4381C6B509000D3E5C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC4371C6B509000D3E5C0 /* main.m */; };
 		C32CC4541C6C7FFB00D3E5C0 /* Dataflow.h in Headers */ = {isa = PBXBuildFile; fileRef = C32CC4531C6C7FFB00D3E5C0 /* Dataflow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C32CC45B1C6C7FFB00D3E5C0 /* Dataflow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32CC4511C6C7FFB00D3E5C0 /* Dataflow.framework */; };
 		C32CC4601C6C7FFC00D3E5C0 /* DataflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC45F1C6C7FFC00D3E5C0 /* DataflowTests.m */; };
@@ -16,7 +15,6 @@
 		C32CC46A1C6C819C00D3E5C0 /* Var.h in Headers */ = {isa = PBXBuildFile; fileRef = C32CC43E1C6C54EE00D3E5C0 /* Var.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C32CC46B1C6C819F00D3E5C0 /* Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = C32CC4451C6C563800D3E5C0 /* Transform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C32CC46C1C6C81A200D3E5C0 /* ConcatStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = C32CC4491C6C68CB00D3E5C0 /* ConcatStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C32CC46D1C6C81BB00D3E5C0 /* Dataflow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32CC4511C6C7FFB00D3E5C0 /* Dataflow.framework */; };
 		C32CC4701C6C81F900D3E5C0 /* Socket.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC4431C6C554A00D3E5C0 /* Socket.m */; };
 		C32CC4711C6C81F900D3E5C0 /* Var.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC43F1C6C54EE00D3E5C0 /* Var.m */; };
 		C32CC4721C6C81F900D3E5C0 /* Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC4461C6C563800D3E5C0 /* Transform.m */; };
@@ -31,30 +29,9 @@
 			remoteGlobalIDString = C32CC4501C6C7FFB00D3E5C0;
 			remoteInfo = Dataflow;
 		};
-		C32CC46E1C6C81BE00D3E5C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C32CC42C1C6B509000D3E5C0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C32CC4501C6C7FFB00D3E5C0;
-			remoteInfo = Dataflow;
-		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		C32CC4321C6B509000D3E5C0 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		C32CC4341C6B509000D3E5C0 /* TestApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestApp; sourceTree = BUILT_PRODUCTS_DIR; };
-		C32CC4371C6B509000D3E5C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C32CC43E1C6C54EE00D3E5C0 /* Var.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Var.h; sourceTree = "<group>"; };
 		C32CC43F1C6C54EE00D3E5C0 /* Var.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Var.m; sourceTree = "<group>"; };
 		C32CC4421C6C554A00D3E5C0 /* Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Socket.h; sourceTree = "<group>"; };
@@ -73,14 +50,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C32CC4311C6B509000D3E5C0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C32CC46D1C6C81BB00D3E5C0 /* Dataflow.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C32CC44D1C6C7FFB00D3E5C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,7 +71,6 @@
 		C32CC42B1C6B509000D3E5C0 = {
 			isa = PBXGroup;
 			children = (
-				C32CC4361C6B509000D3E5C0 /* Test App */,
 				C32CC4521C6C7FFB00D3E5C0 /* Dataflow */,
 				C32CC45E1C6C7FFC00D3E5C0 /* DataflowTests */,
 				C32CC4351C6B509000D3E5C0 /* Products */,
@@ -112,20 +80,10 @@
 		C32CC4351C6B509000D3E5C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C32CC4341C6B509000D3E5C0 /* TestApp */,
 				C32CC4511C6C7FFB00D3E5C0 /* Dataflow.framework */,
 				C32CC45A1C6C7FFB00D3E5C0 /* DataflowTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C32CC4361C6B509000D3E5C0 /* Test App */ = {
-			isa = PBXGroup;
-			children = (
-				C32CC4371C6B509000D3E5C0 /* main.m */,
-			);
-			name = "Test App";
-			path = Dataflow;
 			sourceTree = "<group>";
 		};
 		C32CC4521C6C7FFB00D3E5C0 /* Dataflow */ = {
@@ -174,24 +132,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C32CC4331C6B509000D3E5C0 /* TestApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C32CC43B1C6B509000D3E5C0 /* Build configuration list for PBXNativeTarget "TestApp" */;
-			buildPhases = (
-				C32CC4301C6B509000D3E5C0 /* Sources */,
-				C32CC4311C6B509000D3E5C0 /* Frameworks */,
-				C32CC4321C6B509000D3E5C0 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C32CC46F1C6C81BE00D3E5C0 /* PBXTargetDependency */,
-			);
-			name = TestApp;
-			productName = Dataflow;
-			productReference = C32CC4341C6B509000D3E5C0 /* TestApp */;
-			productType = "com.apple.product-type.tool";
-		};
 		C32CC4501C6C7FFB00D3E5C0 /* Dataflow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C32CC4621C6C7FFC00D3E5C0 /* Build configuration list for PBXNativeTarget "Dataflow" */;
@@ -237,9 +177,6 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ISS;
 				TargetAttributes = {
-					C32CC4331C6B509000D3E5C0 = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
 					C32CC4501C6C7FFB00D3E5C0 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -260,7 +197,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C32CC4331C6B509000D3E5C0 /* TestApp */,
 				C32CC4501C6C7FFB00D3E5C0 /* Dataflow */,
 				C32CC4591C6C7FFB00D3E5C0 /* DataflowTests */,
 			);
@@ -285,14 +221,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C32CC4301C6B509000D3E5C0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C32CC4381C6B509000D3E5C0 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C32CC44C1C6C7FFB00D3E5C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,11 +247,6 @@
 			isa = PBXTargetDependency;
 			target = C32CC4501C6C7FFB00D3E5C0 /* Dataflow */;
 			targetProxy = C32CC45C1C6C7FFB00D3E5C0 /* PBXContainerItemProxy */;
-		};
-		C32CC46F1C6C81BE00D3E5C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C32CC4501C6C7FFB00D3E5C0 /* Dataflow */;
-			targetProxy = C32CC46E1C6C81BE00D3E5C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -407,20 +330,6 @@
 			};
 			name = Release;
 		};
-		C32CC43C1C6B509000D3E5C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		C32CC43D1C6B509000D3E5C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		C32CC4631C6C7FFC00D3E5C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -496,14 +405,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		C32CC43B1C6B509000D3E5C0 /* Build configuration list for PBXNativeTarget "TestApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C32CC43C1C6B509000D3E5C0 /* Debug */,
-				C32CC43D1C6B509000D3E5C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 		C32CC4621C6C7FFC00D3E5C0 /* Build configuration list for PBXNativeTarget "Dataflow" */ = {
 			isa = XCConfigurationList;
