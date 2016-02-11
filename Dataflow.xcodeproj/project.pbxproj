@@ -21,10 +21,23 @@
 		C32CC4731C6C81F900D3E5C0 /* ConcatStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC44A1C6C68CB00D3E5C0 /* ConcatStrings.m */; };
 		C32CC4761C6C928600D3E5C0 /* Module.h in Headers */ = {isa = PBXBuildFile; fileRef = C32CC4741C6C928600D3E5C0 /* Module.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C32CC4771C6C928600D3E5C0 /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC4751C6C928600D3E5C0 /* Module.m */; };
+		C32CC4821C6C954000D3E5C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC4811C6C954000D3E5C0 /* AppDelegate.m */; };
+		C32CC4851C6C954000D3E5C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC4841C6C954000D3E5C0 /* main.m */; };
+		C32CC4881C6C954000D3E5C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC4871C6C954000D3E5C0 /* ViewController.m */; };
+		C32CC48A1C6C954000D3E5C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32CC4891C6C954000D3E5C0 /* Assets.xcassets */; };
+		C32CC48D1C6C954000D3E5C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32CC48B1C6C954000D3E5C0 /* Main.storyboard */; };
+		C32CC4921C6C954F00D3E5C0 /* Dataflow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32CC4511C6C7FFB00D3E5C0 /* Dataflow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		C32CC45C1C6C7FFB00D3E5C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32CC42C1C6B509000D3E5C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C32CC4501C6C7FFB00D3E5C0;
+			remoteInfo = Dataflow;
+		};
+		C32CC4931C6C955400D3E5C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C32CC42C1C6B509000D3E5C0 /* Project object */;
 			proxyType = 1;
@@ -51,6 +64,15 @@
 		C32CC4611C6C7FFC00D3E5C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C32CC4741C6C928600D3E5C0 /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
 		C32CC4751C6C928600D3E5C0 /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
+		C32CC47E1C6C954000D3E5C0 /* ConcatTextFields.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcatTextFields.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32CC4801C6C954000D3E5C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C32CC4811C6C954000D3E5C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C32CC4841C6C954000D3E5C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C32CC4861C6C954000D3E5C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C32CC4871C6C954000D3E5C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C32CC4891C6C954000D3E5C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C32CC48C1C6C954000D3E5C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C32CC48E1C6C954000D3E5C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +91,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C32CC47B1C6C954000D3E5C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32CC4921C6C954F00D3E5C0 /* Dataflow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,8 +107,8 @@
 			children = (
 				C32CC4521C6C7FFB00D3E5C0 /* Dataflow */,
 				C32CC4791C6C92A400D3E5C0 /* Transforms */,
-				C32CC4781C6C929500D3E5C0 /* Examples */,
 				C32CC45E1C6C7FFC00D3E5C0 /* DataflowTests */,
+				C32CC4781C6C929500D3E5C0 /* Examples */,
 				C32CC4351C6B509000D3E5C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +118,7 @@
 			children = (
 				C32CC4511C6C7FFB00D3E5C0 /* Dataflow.framework */,
 				C32CC45A1C6C7FFB00D3E5C0 /* DataflowTests.xctest */,
+				C32CC47E1C6C954000D3E5C0 /* ConcatTextFields.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +153,7 @@
 		C32CC4781C6C929500D3E5C0 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				C32CC47F1C6C954000D3E5C0 /* ConcatTextFields */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -134,6 +166,29 @@
 			);
 			name = Transforms;
 			path = Dataflow;
+			sourceTree = "<group>";
+		};
+		C32CC47F1C6C954000D3E5C0 /* ConcatTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				C32CC4801C6C954000D3E5C0 /* AppDelegate.h */,
+				C32CC4811C6C954000D3E5C0 /* AppDelegate.m */,
+				C32CC4861C6C954000D3E5C0 /* ViewController.h */,
+				C32CC4871C6C954000D3E5C0 /* ViewController.m */,
+				C32CC4891C6C954000D3E5C0 /* Assets.xcassets */,
+				C32CC48B1C6C954000D3E5C0 /* Main.storyboard */,
+				C32CC48E1C6C954000D3E5C0 /* Info.plist */,
+				C32CC4831C6C954000D3E5C0 /* Supporting Files */,
+			);
+			path = ConcatTextFields;
+			sourceTree = "<group>";
+		};
+		C32CC4831C6C954000D3E5C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C32CC4841C6C954000D3E5C0 /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +247,24 @@
 			productReference = C32CC45A1C6C7FFB00D3E5C0 /* DataflowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C32CC47D1C6C954000D3E5C0 /* ConcatTextFields */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C32CC48F1C6C954000D3E5C0 /* Build configuration list for PBXNativeTarget "ConcatTextFields" */;
+			buildPhases = (
+				C32CC47A1C6C954000D3E5C0 /* Sources */,
+				C32CC47B1C6C954000D3E5C0 /* Frameworks */,
+				C32CC47C1C6C954000D3E5C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C32CC4941C6C955400D3E5C0 /* PBXTargetDependency */,
+			);
+			name = ConcatTextFields;
+			productName = ConcatTextFields;
+			productReference = C32CC47E1C6C954000D3E5C0 /* ConcatTextFields.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +280,9 @@
 					C32CC4591C6C7FFB00D3E5C0 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
+					C32CC47D1C6C954000D3E5C0 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = C32CC42F1C6B509000D3E5C0 /* Build configuration list for PBXProject "Dataflow" */;
@@ -215,6 +291,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = C32CC42B1C6B509000D3E5C0;
 			productRefGroup = C32CC4351C6B509000D3E5C0 /* Products */;
@@ -223,6 +300,7 @@
 			targets = (
 				C32CC4501C6C7FFB00D3E5C0 /* Dataflow */,
 				C32CC4591C6C7FFB00D3E5C0 /* DataflowTests */,
+				C32CC47D1C6C954000D3E5C0 /* ConcatTextFields */,
 			);
 		};
 /* End PBXProject section */
@@ -239,6 +317,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32CC47C1C6C954000D3E5C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32CC48A1C6C954000D3E5C0 /* Assets.xcassets in Resources */,
+				C32CC48D1C6C954000D3E5C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +352,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C32CC47A1C6C954000D3E5C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32CC4881C6C954000D3E5C0 /* ViewController.m in Sources */,
+				C32CC4851C6C954000D3E5C0 /* main.m in Sources */,
+				C32CC4821C6C954000D3E5C0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,7 +370,23 @@
 			target = C32CC4501C6C7FFB00D3E5C0 /* Dataflow */;
 			targetProxy = C32CC45C1C6C7FFB00D3E5C0 /* PBXContainerItemProxy */;
 		};
+		C32CC4941C6C955400D3E5C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C32CC4501C6C7FFB00D3E5C0 /* Dataflow */;
+			targetProxy = C32CC4931C6C955400D3E5C0 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C32CC48B1C6C954000D3E5C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C32CC48C1C6C954000D3E5C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C32CC4391C6B509000D3E5C0 /* Debug */ = {
@@ -419,6 +532,30 @@
 			};
 			name = Release;
 		};
+		C32CC4901C6C954000D3E5C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ConcatTextFields/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iss.ConcatTextFields;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C32CC4911C6C954000D3E5C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ConcatTextFields/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iss.ConcatTextFields;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -444,6 +581,14 @@
 			buildConfigurations = (
 				C32CC4661C6C7FFC00D3E5C0 /* Debug */,
 				C32CC4671C6C7FFC00D3E5C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C32CC48F1C6C954000D3E5C0 /* Build configuration list for PBXNativeTarget "ConcatTextFields" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32CC4901C6C954000D3E5C0 /* Debug */,
+				C32CC4911C6C954000D3E5C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
