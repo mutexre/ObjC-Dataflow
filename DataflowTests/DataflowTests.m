@@ -30,14 +30,22 @@
     concat.inputStrings = @[ DFVarMake(@"abc"), DFVarMake(@" "), DFVarMake(@"def") ];
     XCTAssertEqual(concat.output.value, nil);
     
-    [concat autocreateOutputVariables];
-    XCTAssert([concat.output.value isEqualToString:@"abc def"]);
-    
     concat.output = [DFVar<NSString*> new];
     XCTAssert([concat.output.value isEqualToString:@"abc def"]);
     
     concat.inputStrings[1].value = @"+";
     XCTAssert([concat.output.value isEqualToString:@"abc+def"]);
+}
+
+- (void)testConcatAutocreateOutputVars {
+    DFConcatStrings* concat = [DFConcatStrings new];
+    XCTAssertEqual(concat.output.value, nil);
+    
+    concat.inputStrings = @[ DFVarMake(@"abc"), DFVarMake(@" "), DFVarMake(@"def") ];
+    XCTAssertEqual(concat.output.value, nil);
+    
+    [concat autocreateOutputVariables];
+    XCTAssert([concat.output.value isEqualToString:@"abc def"]);
 }
 
 @end
