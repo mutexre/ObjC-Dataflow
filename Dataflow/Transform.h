@@ -10,7 +10,7 @@
 #define DFOutput
 
 @interface DFTransform : NSObject<DFConnection, DFValueProvider> {
-    NSMapTable<DFSocket*, NSString*> *invalidators, *evaluators;
+    NSMapTable<DFSocket*, NSString*>* invalidators, *evaluators;
 }
 
 - (void)autocreateOutputVariables;

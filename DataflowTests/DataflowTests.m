@@ -48,4 +48,11 @@
     XCTAssert([concat.output.value isEqualToString:@"abc def"]);
 }
 
+- (void)testFilter {
+    DFFilter* f = [DFFilter new];
+    f.f = ^BOOL(NSNumber* x) { return YES; };
+    f.input = [DFVar varWithValue:@[ @1, @2, @3, @4, @5 ]];
+    XCTAssertEqual(f.output.value, @[ @1, @2, @3, @4, @5 ]);
+}
+
 @end

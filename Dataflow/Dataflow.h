@@ -24,5 +24,7 @@ FOUNDATION_EXPORT const unsigned char DataflowVersionString[];
 #import <Dataflow/Socket.h>
 #import <Dataflow/Var.h>
 #import <Dataflow/Transform.h>
+#import <Dataflow/Function.h>
 #import <Dataflow/Module.h>
 #import <Dataflow/ConcatStrings.h>
+#import <Dataflow/Filter.h>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		929F1D161C6CE7F7008F71A4 /* Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 929F1D141C6CE7F7008F71A4 /* Filter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		929F1D171C6CE7F7008F71A4 /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 929F1D151C6CE7F7008F71A4 /* Filter.m */; };
+		929F1D1A1C6CE90D008F71A4 /* Function.h in Headers */ = {isa = PBXBuildFile; fileRef = 929F1D181C6CE90D008F71A4 /* Function.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		929F1D1B1C6CE90D008F71A4 /* Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 929F1D191C6CE90D008F71A4 /* Function.m */; };
 		C32CC4541C6C7FFB00D3E5C0 /* Dataflow.h in Headers */ = {isa = PBXBuildFile; fileRef = C32CC4531C6C7FFB00D3E5C0 /* Dataflow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C32CC45B1C6C7FFB00D3E5C0 /* Dataflow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32CC4511C6C7FFB00D3E5C0 /* Dataflow.framework */; };
 		C32CC4601C6C7FFC00D3E5C0 /* DataflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC45F1C6C7FFC00D3E5C0 /* DataflowTests.m */; };
@@ -47,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		929F1D141C6CE7F7008F71A4 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		929F1D151C6CE7F7008F71A4 /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
+		929F1D181C6CE90D008F71A4 /* Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function.h; sourceTree = "<group>"; };
+		929F1D191C6CE90D008F71A4 /* Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function.m; sourceTree = "<group>"; };
 		C32CC43E1C6C54EE00D3E5C0 /* Var.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Var.h; sourceTree = "<group>"; };
 		C32CC43F1C6C54EE00D3E5C0 /* Var.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Var.m; sourceTree = "<group>"; };
 		C32CC4421C6C554A00D3E5C0 /* Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Socket.h; sourceTree = "<group>"; };
@@ -134,6 +142,8 @@
 				C32CC43F1C6C54EE00D3E5C0 /* Var.m */,
 				C32CC4451C6C563800D3E5C0 /* Transform.h */,
 				C32CC4461C6C563800D3E5C0 /* Transform.m */,
+				929F1D181C6CE90D008F71A4 /* Function.h */,
+				929F1D191C6CE90D008F71A4 /* Function.m */,
 				C32CC4741C6C928600D3E5C0 /* Module.h */,
 				C32CC4751C6C928600D3E5C0 /* Module.m */,
 				C32CC4551C6C7FFB00D3E5C0 /* Info.plist */,
@@ -163,6 +173,8 @@
 			children = (
 				C32CC4491C6C68CB00D3E5C0 /* ConcatStrings.h */,
 				C32CC44A1C6C68CB00D3E5C0 /* ConcatStrings.m */,
+				929F1D141C6CE7F7008F71A4 /* Filter.h */,
+				929F1D151C6CE7F7008F71A4 /* Filter.m */,
 			);
 			name = Transforms;
 			path = Dataflow;
@@ -203,8 +215,10 @@
 				C32CC4691C6C819900D3E5C0 /* Socket.h in Headers */,
 				C32CC46A1C6C819C00D3E5C0 /* Var.h in Headers */,
 				C32CC46B1C6C819F00D3E5C0 /* Transform.h in Headers */,
+				929F1D1A1C6CE90D008F71A4 /* Function.h in Headers */,
 				C32CC4761C6C928600D3E5C0 /* Module.h in Headers */,
 				C32CC46C1C6C81A200D3E5C0 /* ConcatStrings.h in Headers */,
+				929F1D161C6CE7F7008F71A4 /* Filter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +354,9 @@
 				C32CC4771C6C928600D3E5C0 /* Module.m in Sources */,
 				C32CC4711C6C81F900D3E5C0 /* Var.m in Sources */,
 				C32CC4721C6C81F900D3E5C0 /* Transform.m in Sources */,
+				929F1D1B1C6CE90D008F71A4 /* Function.m in Sources */,
 				C32CC4731C6C81F900D3E5C0 /* ConcatStrings.m in Sources */,
+				929F1D171C6CE7F7008F71A4 /* Filter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +591,7 @@
 				C32CC4641C6C7FFC00D3E5C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C32CC4651C6C7FFC00D3E5C0 /* Build configuration list for PBXNativeTarget "DataflowTests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +600,7 @@
 				C32CC4671C6C7FFC00D3E5C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C32CC48F1C6C954000D3E5C0 /* Build configuration list for PBXNativeTarget "ConcatTextFields" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +609,7 @@
 				C32CC4911C6C954000D3E5C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
